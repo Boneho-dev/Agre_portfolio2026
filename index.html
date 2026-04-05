@@ -11,6 +11,31 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
+    /* Empêche le débordement horizontal sur tout le site */
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Force les images et éléments larges à ne jamais dépasser l'écran */
+    * {
+      box-sizing: border-box;
+    }
+
+    img,
+    video,
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    * {
+      outline: 1px solid red !important;
+    }
+
     :root {
       --main-green: #2ecc71;
       --dark-bg: #0f172a;
